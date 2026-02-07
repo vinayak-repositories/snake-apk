@@ -17,10 +17,12 @@ jobs:
         with:
           node-version: 18
 
-      - name: Install dependencies
-        run: npm install
+      - name: Install Dependencies
+        run: |
+          npm install
+          npm install @capacitor/cli @capacitor/core @capacitor/android
 
-      - name: Copy web files to capacitor
+      - name: Copy Web Assets
         run: npx cap copy android
 
       - name: Build APK
