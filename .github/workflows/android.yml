@@ -2,7 +2,7 @@ name: Build APK
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
   build:
@@ -20,10 +20,8 @@ jobs:
       - name: Install Dependencies
         run: |
           npm install
-          npm install @capacitor/cli @capacitor/core @capacitor/android
-
-      - name: Copy Web Assets
-        run: npx cap copy android
+          npm install @capacitor/cli
+          npx cap sync android
 
       - name: Build APK
         run: |
