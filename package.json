@@ -1,17 +1,12 @@
 {
-  "name": "snakeapp",
+  "name": "snake-widget",
   "version": "1.0.0",
-  "main": "script.js",
+  "description": "Snake Game Android App",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "echo building"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
-    "@capacitor/android": "^8.0.2",
-    "@capacitor/cli": "^7.4.5",
-    "@capacitor/core": "^8.0.2"
+    "@capacitor/core": "^6.0.0",
+    "@capacitor/android": "^6.0.0"
   }
 }
